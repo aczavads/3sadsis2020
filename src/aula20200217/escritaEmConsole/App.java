@@ -1,4 +1,4 @@
-package aula17022020.escritaEmConsole;
+package aula20200217.escritaEmConsole;
 
 import org.omg.CORBA.NO_MEMORY;
 
@@ -21,7 +21,7 @@ public class App {
 		System.out.println("O menor é: " + definirMenor(200, 80));
 		
 		//esse método cria o array do tamanho solicitado contendo a cidade informada em todas as posições
-		String[] cidades = criarArrayDeCidades(7, "Marialva"); 
+		String[] cidades = criarArrayDeCidades(100, "Maringá"); 
 		//esse método imprime as cidades do array no console.
 		listarCidades(cidades); 
 		
@@ -41,6 +41,7 @@ public class App {
 		}
 		return arrayDeCidades;
 	}
+	
 	private static void listarCidades(String[] cidades) {
 		for (int i = 0; i < cidades.length; i++) {
 			System.out.println(cidades[i]);
