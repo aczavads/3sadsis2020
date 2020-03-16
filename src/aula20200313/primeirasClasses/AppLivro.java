@@ -2,6 +2,8 @@ package aula20200313.primeirasClasses;
 
 public class AppLivro {
 	
+	//+ main(args : String[]) : void 
+	//------------------------------    ==> sublinhado, pois se trata de um método estático
 	public static void main(String[] args) {
 		
 		//1º Declaração da variável "bigJava" do tipo Livro: "Livro bigJava"
