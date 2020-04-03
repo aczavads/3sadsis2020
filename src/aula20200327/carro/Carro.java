@@ -23,7 +23,11 @@ public class Carro {
 	}
 	//+ ligar() : void
 	public void ligar() {
-		if (combustivelNoTanqueEmLitros - COMSUMO > 0.00) {
+		if (isLigado()) {
+			//return;
+			throw new RuntimeException("O carro já está ligado, você não pode ligá-lo novamente!");
+		}
+		if (combustivelNoTanqueEmLitros - COMSUMO >= 0.00) {
 			ligado = true;
 			combustivelNoTanqueEmLitros -= COMSUMO;
 		}
@@ -34,9 +38,10 @@ public class Carro {
 	}
 	//+ acelerar() : void
 	public void acelerar() {
-		if (combustivelNoTanqueEmLitros - COMSUMO > 0.00) {
+		if (combustivelNoTanqueEmLitros - COMSUMO >= 0.00) {
 			combustivelNoTanqueEmLitros -= COMSUMO;
-		} else {
+		} 
+		if (combustivelNoTanqueEmLitros == 0.00) {
 			desligar();
 		}
 	}

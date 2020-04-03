@@ -32,4 +32,51 @@ class TestesComCarro {
 		assertEquals(24.50, golAGJ1234.getCombustivelNoTanqueEmLitros());
 	}
 
+	@Test
+	void testarSeAoAbastecerAumentaQuantidadeNoTanque() {
+		Carro kombiAAA1313 = new Carro();		
+		assertEquals(0.00, kombiAAA1313.getCombustivelNoTanqueEmLitros());
+		
+		kombiAAA1313.abastecer(25.00);
+		assertEquals(25.00, kombiAAA1313.getCombustivelNoTanqueEmLitros());
+		
+		kombiAAA1313.abastecer(7.50);
+		assertEquals(32.50, kombiAAA1313.getCombustivelNoTanqueEmLitros());
+	}
+
+	@Test
+	void testarDesligaQuandoAcabaCombustivel() {
+		Carro kombiAAA1313 = new Carro();				
+		kombiAAA1313.abastecer(2);
+		
+		kombiAAA1313.ligar();
+		assertTrue(kombiAAA1313.isLigado());
+		
+		kombiAAA1313.acelerar();
+		kombiAAA1313.acelerar();
+		kombiAAA1313.acelerar();
+		kombiAAA1313.acelerar();
+		kombiAAA1313.acelerar();
+		kombiAAA1313.acelerar();
+		assertTrue(kombiAAA1313.isLigado());
+
+		kombiAAA1313.acelerar();
+		//assertFalse(kombiAAA1313.isLigado());
+		assertTrue(kombiAAA1313.isDesligado());
+		
+		assertEquals(0.00, kombiAAA1313.getCombustivelNoTanqueEmLitros());
+	}
+
+	@Test
+	void testarLigarQuandoJaEstaLigado() {
+		Carro novo = new Carro();
+		novo.abastecer(10);
+		novo.ligar();		
+		novo.ligar();
+	}
 }
+
+
+
+
+
