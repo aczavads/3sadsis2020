@@ -16,6 +16,11 @@ public class Carro {
 		ligado = false;
 	}
 	
+	//+ esvaziarTanque() : void
+	public void esvaziarTanque() {
+		combustivelNoTanqueEmLitros = 0.00;
+	}
+	
 	//+ abastecer(volumeEmLitros : double) : void
 	public void abastecer(double volumeEmLitros) {
 		//this.combustivelNoTanqueEmLitros = this.combustivelNoTanqueEmLitros + volumeEmLitros;

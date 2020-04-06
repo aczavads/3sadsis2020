@@ -7,6 +7,27 @@ import org.junit.jupiter.api.Test;
 class TestesComCarro {
 
 	@Test
+	void testarEsvaziarTanque() {
+		Carro palioABC3333 = new Carro();
+		Carro golAGJ1234 = new Carro();
+		
+		palioABC3333.abastecer(42);
+		golAGJ1234.abastecer(41);
+		
+		assertEquals(42, palioABC3333.getCombustivelNoTanqueEmLitros());
+		assertEquals(41, golAGJ1234.getCombustivelNoTanqueEmLitros());
+		
+		palioABC3333.esvaziarTanque();
+		assertEquals(0, palioABC3333.getCombustivelNoTanqueEmLitros());
+		
+		assertEquals(41, golAGJ1234.getCombustivelNoTanqueEmLitros());
+		
+		golAGJ1234.esvaziarTanque();
+		assertEquals(0, golAGJ1234.getCombustivelNoTanqueEmLitros());		
+
+	}
+	
+	@Test
 	void testarConsumo() {
 		Carro palioABC3333 = new Carro();
 		Carro golAGJ1234 = new Carro();
@@ -72,7 +93,7 @@ class TestesComCarro {
 		Carro novo = new Carro();
 		novo.abastecer(10);
 		novo.ligar();		
-		novo.ligar();
+		//novo.ligar();
 	}
 }
 
