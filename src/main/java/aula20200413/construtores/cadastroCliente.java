@@ -1,13 +1,9 @@
 package aula20200413.construtores;
 
-import java.util.Calendar;
-
-public class Aluno {
-	private String ra;
-	private String primeiroNome;
-	private String sobrenome;
-	private String curso;
-	private int anoDeIngresso;
+public class Cliente {
+	private String nome;
+	private String rua;
+	private int cpf;
 	
 	public String toString() {
 		return "Aluno[" + "ra=" + getRa() + ", nome=" + getPrimeiroNome() + " " + getSobrenome() + "]"; 
