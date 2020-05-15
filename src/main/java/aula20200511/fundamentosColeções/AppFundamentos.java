@@ -1,10 +1,24 @@
 package aula20200511.fundamentosColeções;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AppFundamentos {
 	
 	public static void main(String[] args) {
+		String[][] arrayMatriz5x5 = new String[5][5];
+		
+		ArrayList<String[]> matriz5x5 = new ArrayList<>();
+		matriz5x5.add(new String[5]);
+		matriz5x5.add(new String[5]);
+		matriz5x5.add(new String[5]);
+		matriz5x5.add(new String[5]);
+		matriz5x5.add(new String[5]);
+		
+		matriz5x5.get(2)[2] = "Opa!";
+		
+		
+		
 		
 		ArrayList<String> nomes1 = new ArrayList<>();
 		nomes1.add("Ana");
