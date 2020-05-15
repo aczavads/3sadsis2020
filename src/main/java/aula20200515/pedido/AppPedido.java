@@ -29,9 +29,9 @@ public class AppPedido {
 	public static void listarItensDoPedidoNoConsole(Pedido p) {
 		ArrayList<ItemPedido>  itensDoPedido = p.getItens();
 		System.out.println("---------------------------------------");
-		System.out.println("Itens do pedido nro " + p.getNúmero());
+		System.out.println("Itens do pedido nro " + p.getNúmero() + " Valor total=" + p.getValorTotal());
 		for (ItemPedido item : itensDoPedido) {
-			System.out.println(item.getProduto().getNome() + " " + item.getQuantidade() + " " + item.getPreço());
+			System.out.println(item.getProduto().getNome() + " " + item.getQuantidade() + " " + item.getPreço() + " " + item.getValorTotal());
 		}
 		System.out.println("---------------------------------------");
 	}

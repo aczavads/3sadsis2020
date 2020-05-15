@@ -10,6 +10,12 @@ public class ItemPedido {
 	//- produto (atributo de associação) 
 	private Produto produto;
 	
+
+	//+ getValorTotal() : double
+	public double getValorTotal() {
+		return quantidade * preço;
+	}
+	
 	//+ getQuantidade() : double
 	public double getQuantidade() {
 		return quantidade;
