@@ -1,6 +1,6 @@
 package aula20200518.pedido;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class AppPedido {
 	
@@ -29,7 +29,7 @@ public class AppPedido {
 	}
 	
 	public static void listarItensDoPedidoNoConsole(Pedido p) {
-		ArrayList<ItemPedido>  itensDoPedido = p.getItens();
+		HashSet<ItemPedido>  itensDoPedido = p.getItens();
 		System.out.println("---------------------------------------");
 		System.out.println("Itens do pedido nro " + p.getNúmero() + " Valor total=" + p.getValorTotal());
 		for (ItemPedido item : itensDoPedido) {

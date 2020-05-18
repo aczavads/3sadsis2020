@@ -1,13 +1,14 @@
 package aula20200518.pedido;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Pedido {
 	//- número : int
 	private int número;
 	
 	//- itens (atributo de associação)
-	private ArrayList<ItemPedido> itens = new ArrayList<>();
+	private HashSet<ItemPedido> itens = new HashSet<>();
 
 	
 	//+ getValorTotal() : double
@@ -35,7 +36,7 @@ public class Pedido {
 	}
 	 
 	//+ getItens() : ArrayList<ItemPedido>
-	public ArrayList<ItemPedido> getItens() {
+	public HashSet<ItemPedido> getItens() {
 		return itens;
 	}
 
