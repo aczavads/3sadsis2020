@@ -4,13 +4,14 @@ import java.util.HashSet;
 
 public class AppPedido {
 	
+	
 	public static void main(String[] args) {
 		Produto fraldaPampersRN = new Produto("Fralda Pampers Confort Sec RN");
 		Produto leiteNinhoFases2 = new Produto("Leite Ninho Infantil Fases 2");
 		Produto feijão = new Produto("Feijão Grão de Ouro 1kg");
 		
 		
-		Pedido pedido100 = new Pedido(100);
+		Pedido pedido100 = new Pedido(100);		
 		pedido100.adicionarItem(new ItemPedido(fraldaPampersRN, 2, 37.50));
 		pedido100.adicionarItem(new ItemPedido(feijão, 4, 7.50));
 		
