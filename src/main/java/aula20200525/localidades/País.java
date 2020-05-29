@@ -1,4 +1,4 @@
-package aula20200525.x;
+package aula20200525.localidades;
 
 import java.util.ArrayList;
 

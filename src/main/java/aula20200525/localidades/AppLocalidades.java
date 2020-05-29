@@ -1,6 +1,6 @@
-package aula20200525.x;
+package aula20200525.localidades;
 
-public class AppX {
+public class AppLocalidades {
 	
 	public static void main(String[] args) {
 		País br = new País("Brasil", 55);
