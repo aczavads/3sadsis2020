@@ -19,6 +19,9 @@ public class Pessoa {
 	}
 	
 	public void addEndereço(Endereço e) {
+//		if (this.endereços.contains(e)) {
+//			return;
+//		}
 		System.out.println("Adicionando novo endereço à pessoa: " + e.toString());
 		this.endereços.add(e);
 		e.addMorador(this);
