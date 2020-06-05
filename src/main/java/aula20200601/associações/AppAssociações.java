@@ -12,7 +12,7 @@ public class AppAssociações {
 		nomes.add("Lúcia");
 		
 		System.out.println("Nomes contém Josias? " + nomes.contains("Josias"));
-		System.out.println("Nomes contém Ana? " + nomes.contains("Ana"));
+ 		System.out.println("Nomes contém Ana? " + nomes.contains("Ana"));
 		*/
 		
 		
